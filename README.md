@@ -3,7 +3,7 @@ Dynamically update your DNS record with CloudFlare. Updated for Cloudflare API v
 
 
 ## Disclaimer / Important Information
-The original script is NOT mine. I was unable to find the original author on Github. I got a forked version from the user MyLesGray from his website https://blah.cloud/networks/raspberry-pi-dynamic-dns-using-cloudflare/ but it was written using CloudFlare's v1 API which will be retired on June 4th 2018. Without prior knowledge of bash scripts I decided to study the CloudFlare v4 API and update the script accordingly by myself. This is the end result, which is working fine for me in a Raspberry Pi, but I haven't tested it in every possible scenario. YMMV.
+The original script is NOT mine. I *think* the original author is user larrybolt but he seems to have deleted the original repository or I just couldn't find it. I got a forked version from the user MyLesGray from his website https://blah.cloud/networks/raspberry-pi-dynamic-dns-using-cloudflare/. The original version was written using CloudFlare's v1 API which was retired on June 4th 2018. Without prior knowledge of bash scripts I decided to study the CloudFlare v4 API and update the script accordingly by myself. This is the end result, which is working fine for me in a Raspberry Pi, but I haven't tested it in every possible scenario. YMMV.
 
 ## Initial setup
 Download the script manually or with wget. Make it executable with chmod. Next, edit it with nano, vim or whatever you prefer. Fill in the following parameters:
