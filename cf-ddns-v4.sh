@@ -10,14 +10,6 @@ set -o pipefail
 # /usr/local/bin/cf-ddns.sh
 # run `crontab -e` and add next line:
 # 0 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1
-
-# if you're lazy (like me) copy/paste the command BETWEEN the EOT
-: <<'EOT'
-curl https://gist.githubusercontent.com/larrybolt/6295160/raw > /usr/local/bin/cf-ddns.sh && chmod +x /usr/local/bin/cf-ddns.sh
-(crontab -l 2>/dev/null; echo "0 * * * * /usr/local/bin/cf-ddns.sh >/dev/null 2>&1") | crontab -
-$EDITOR /usr/local/bin/cf-ddns.sh
-/usr/local/bin/cf-ddns.sh
-EOT
 # run /usr/local/bin/cf-ddns.sh in terminal to check all settings are valid
 
 # Usage:
